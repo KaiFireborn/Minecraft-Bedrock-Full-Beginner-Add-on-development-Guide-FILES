@@ -7,8 +7,11 @@
     "blocky": {
       "textures": "textures/blocks/blocky"
     },
-    "sapp_log": {
+    "sapp_log_top": {
       "textures": "textures/blocks/sapp_log_top"
+    },
+    "sapp_log_side": {
+      "textures": "textures/blocks/sapp_log_side"
     }
   }
 }
