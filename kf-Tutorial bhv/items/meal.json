@@ -5,7 +5,6 @@
             "identifier": "tut:meal"
         },
         "components": {
-            "minecraft:max_damage": 10,
             "minecraft:hand_equipped": false,
             "minecraft:stacked_by_data": true,
             "minecraft:foil": false,
@@ -17,9 +16,9 @@
                 "can_always_eat": false,
                 "effects": [
                     {
-                        "name": "regeneration", 
-                        "chance": 1.0, 
-                        "duration": 5, 
+                        "name": "regeneration",
+                        "chance": 1.0,
+                        "duration": 5,
                         "amplifier": 1
                     },
                     {

@@ -22,5 +22,17 @@
       "east": "sapp_log_side" */
     },
     "sound": "wood"
+  },
+  "tut:compass_block": {
+    "textures": {
+      "up": "compass_block_up",
+      "down": "compass_block_down",
+      "north": "compass_block_north",
+      "south": "compass_block_south",
+      "west": "compass_block_west",
+      "east": "compass_block_east"
+    },
+    "sound": "wool"
   }
+
 }
