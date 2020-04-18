@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tut:skele_yaklin",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "default": "textures/entity/skele_yaklin"
+      },
+      "geometry": {
+        "default": "geometry.skele_yaklin"
+      },
+      "animations": {
+        "walk": "animation.skele_yaklin.walk",
+        //"attack": "animation.skele_yaklin.attack",
+        "humanoid_big_head": "animation.humanoid.big_head",
+        "look_at_target": "animation.humanoid.look_at_target.default.v1.0"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "walk": "query.modified_move_speed"
+          },
+          {
+            "humanoid_big_head": "query.is_baby"
+          },
+          "look_at_target"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.skele_yaklin"
+      ],
+      "enable_attachables": false,
+      "spawn_egg": {
+        "base_color": "#82502e",
+        "overlay_color": "#989797"
+      }
+    }
+  }
+}

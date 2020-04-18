@@ -8,18 +8,11 @@
     "textures": "blocky",
     "sound": "stone"
   },
-  "tut:flashing": {
-    "textures": "flashing",
-    "sound": "wood"
-  },
   "tut:sapp_log": {
     "textures": {
       "up": "sapp_log_top",
       "down": "sapp_log_top",
-      "side": "sapp_log_side"/* ,
-      "south": "sapp_log_side",
-      "west": "sapp_log_side",
-      "east": "sapp_log_side" */
+      "side": "sapp_log_side"
     },
     "sound": "wood"
   },
@@ -33,6 +26,9 @@
       "east": "compass_block_east"
     },
     "sound": "wool"
+  },
+  "tut:flashing": {
+    "textures": "flashing",
+    "sound": "glass"
   }
-
 }

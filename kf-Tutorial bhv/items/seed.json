@@ -1,3 +1,5 @@
+//This feature doesn't work as intended. This is just a test
+
 {
     "format_version": "1.12.0",
     "minecraft:item": {
@@ -12,7 +14,7 @@
             "minecraft:max_stack_size": 64,
             "minecraft:use_duration": 32,
             "minecraft:seed": {
-                "crop_result": "wheat", // crop seed item result 
+                "crop_result": "wheat", // crop seed item result. Only berry bushes are valid
                 "plant_at": [
                     "grass",
                     "dirt",
