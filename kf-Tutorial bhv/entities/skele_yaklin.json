@@ -1,6 +1,5 @@
 //bhv/entities/skele_yaklin.json
 //It's reommended to change your language setting from `json` to `jsonc`[bottom right corner] in order for the comments not to display as errors.
-
 {
     "format_version": "1.14.0",
     "minecraft:entity": {
@@ -140,6 +139,16 @@
                     "inventory_size": 6,
                     "container_type": "horse"
                 }
+            },
+            "tut:red": {
+                "minecraft:variant": {
+                    "value": 0
+                }
+            },
+            "tut:arctic": {
+                "minecraft:variant": {
+                    "value": 1
+                }
             }
         },
         //Components are applied to the entity by default and cannot be removed
@@ -211,27 +220,52 @@
         "events": {
             //This events gets applied whenewer a new entity is added.
             "minecraft:entity_spawned": {
-                //either the adult or the baby variant gets randomly chosen, along with the "wild" variation
-                "randomize": [
+                //Every object in the "sequence" array will be run.
+                "sequence": [
                     {
-                        "weight": 55,
-                        "remove": {},
-                        "add": {
-                            "component_groups": [
-                                "tut:adult",
-                                "tut:wild"
-                            ]
-                        }
+                        //either the adult or the baby variant gets randomly chosen, along with the "wild" variation
+                        "randomize": [
+                            {
+                                "weight": 55,
+                                "remove": {},
+                                "add": {
+                                    "component_groups": [
+                                        "tut:adult",
+                                        "tut:wild"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 5,
+                                "remove": {},
+                                "add": {
+                                    "component_groups": [
+                                        "tut:baby",
+                                        "tut:wild"
+                                    ]
+                                }
+                            }
+                        ]
                     },
                     {
-                        "weight": 5,
-                        "remove": {},
-                        "add": {
-                            "component_groups": [
-                                "tut:baby",
-                                "tut:wild"
-                            ]
-                        }
+                        "randomize": [
+                            {
+                                "weight": 56,
+                                "add": {
+                                    "component_groups": [
+                                        "tut:red"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 15,
+                                "add": {
+                                    "component_groups": [
+                                        "tut:arctic"
+                                    ]
+                                }
+                            }
+                        ]
                     }
                 ]
             },

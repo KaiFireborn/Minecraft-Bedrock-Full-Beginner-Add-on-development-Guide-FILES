@@ -7,7 +7,8 @@
         "default": "skeleton"
       },
       "textures": {
-        "default": "textures/entity/skele_yaklin"
+        "red": "textures/entity/skele_yaklin",
+        "arctic": "textures/entity/skele_yaklin_arctic"
       },
       "geometry": {
         "default": "geometry.skele_yaklin"
