@@ -4,7 +4,7 @@
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "jdot:compass_block_recipe"
+      "identifier": "tut:compass_block_recipe"
     },
     "tags": [
       "crafting_table"
@@ -23,7 +23,7 @@
       }
     },
     "result": {
-      "item": "rur:compass_block",
+      "item": "tut:compass_block",
       "data": 0,
       "count": 4
     }
