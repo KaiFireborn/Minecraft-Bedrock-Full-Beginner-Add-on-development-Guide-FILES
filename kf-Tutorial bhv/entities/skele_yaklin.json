@@ -108,15 +108,16 @@
             //this gets added when the entitiy gets tamed in "minecraft:on_tame" event
             "tut:tamed": {
                 //rideable
+                "minecraft:horse.jump_strength": {
+                    "value": {
+                        "range_min": 0.4,
+                        "range_max": 1.5
+                    }
+                },
+                "minecraft:is_saddled": {},
                 "minecraft:input_ground_controlled": {},
                 "minecraft:can_power_jump": {},
                 "minecraft:behavior.player_ride_tamed": {},
-                "minecraft:behavior.mount_pathing": {
-                    "priority": 2,
-                    "speed_multiplier": 1.5,
-                    "target_dist": 0.0,
-                    "track_target": true
-                },
                 "minecraft:is_tamed": {},
                 "minecraft:rideable": {
                     "priority": 0,
@@ -136,7 +137,7 @@
                 },
                 //inventory
                 "minecraft:inventory": {
-                    "inventory_size": 6,
+                    "inventory_size": 16,
                     "container_type": "horse"
                 }
             },
