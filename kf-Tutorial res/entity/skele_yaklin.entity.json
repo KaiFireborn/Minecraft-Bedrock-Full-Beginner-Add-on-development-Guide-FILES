@@ -15,15 +15,14 @@
       },
       "animations": {
         "walk": "animation.skele_yaklin.walk",
-        //"attack": "animation.skele_yaklin.attack",
+        "attack": "animation.skele_yaklin.attack",
         "humanoid_big_head": "animation.humanoid.big_head",
-        "look_at_target": "animation.humanoid.look_at_target.default.v1.0"
+        "look_at_target": "animation.humanoid.look_at_target.default.v1.0",
+        "ctrl": "controller.animation.skele_yaklin.attack"
       },
       "scripts": {
         "animate": [
-          {
-            "walk": "query.modified_move_speed"
-          },
+          "ctrl",
           {
             "humanoid_big_head": "query.is_baby"
           },
@@ -33,6 +32,9 @@
       "render_controllers": [
         "controller.render.skele_yaklin"
       ],
+      "particle_effects": {
+        "l_explosion": "minecraft:large_explosion"
+      },
       "enable_attachables": false,
       "spawn_egg": {
         "base_color": "#82502e",
