@@ -1,8 +1,8 @@
 {
   "resource_pack_name": "tut",
   "texture_name": "atlas.terrain",
-  "padding": 8,
-  "num_mip_levels": 4,
+  "padding": 128,
+  "num_mip_levels": 0,
   "texture_data": {
     "blocky": {
       "textures": "textures/blocks/blocky"

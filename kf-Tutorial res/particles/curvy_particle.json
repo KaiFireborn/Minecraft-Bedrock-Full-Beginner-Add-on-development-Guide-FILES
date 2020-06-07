@@ -43,7 +43,7 @@
             "size_UV": [ 8, 8 ],
             "step_UV": [ 8, 0 ],
             "frames_per_second": 2,
-            "max_frame": 8,
+            "max_frame": 2,
             "stretch_to_lifetime": true,
             "loop": false
           }
